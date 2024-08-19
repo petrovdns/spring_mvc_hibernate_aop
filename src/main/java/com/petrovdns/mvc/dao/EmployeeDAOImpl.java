@@ -58,7 +58,6 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         session.remove(employee);
     }
 
-    public int addSum() {
-        return 1 + 1;
-    }
+    //aaa
+
 }
