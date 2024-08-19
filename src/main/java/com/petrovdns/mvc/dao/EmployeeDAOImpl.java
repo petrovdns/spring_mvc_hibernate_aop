@@ -30,8 +30,7 @@ public class EmployeeDAOImpl implements EmployeeDAO {
 //                .getResultList();
 
         Query<Employee> query = session.createQuery("from Employee", Employee.class);
-       // List<Employee> allEmployees = query.getResultList();
-
+        // List<Employee> allEmployees = query.getResultList();
 
 
         return query.getResultList();
@@ -57,5 +56,9 @@ public class EmployeeDAOImpl implements EmployeeDAO {
         Session session = sessionFactory.getCurrentSession();
         Employee employee = session.get(Employee.class, id);
         session.remove(employee);
+    }
+
+    public int addSum() {
+        return 1 + 1;
     }
 }
